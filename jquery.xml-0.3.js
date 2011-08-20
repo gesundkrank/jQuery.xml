@@ -1,6 +1,6 @@
 /*
  * jQuery XML Plugin v0.2
- * http://anycook.de
+ * used on and developed for http://anycook.de
  *
  * Copyright (c) 2011 Jan Grassegger
  * Dual licensed under the MIT or GPL Version 2 licenses.
