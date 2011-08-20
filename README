@@ -28,11 +28,11 @@ USE
 		</template>
 	<templates>
 	
-2. use .init when initializing script. $("import_xml_content_here").init(options)
+2. use init when initializing script. $("import_xml_content_here").xml("init", options)
 	options: 
 		xml : xml file
 		async : if false xml file is stored in cache (faster!!) else xml file is reload every time your requesting data (dynamically)
-3. use .append to append xml content. $("import_xml_content_here").init(contentName)
+3. use append to append xml content. $("import_xml_content_here").xml("append", "an_id")
 	contentName: id of the XML container you want to import 	
 	
 BROWSER COMPATIBILITY
