@@ -40,9 +40,9 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 	$("import_xml_content_here").xml("init", options)
 	
 	options:{
-		xml : xml file
-		async : if false xml file is stored in cache (faster!!) 
-			else xml file reloads every time your requesting data (dynamically)
+		xml : "xml file",
+		async : "if false xml file is stored in cache (faster!!) 
+			else xml file reloads every time your requesting data (dynamically)"
 	}
 	```
 3. Use ```append``` to append xml content.
