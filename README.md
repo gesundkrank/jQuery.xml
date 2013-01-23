@@ -5,18 +5,16 @@ Copyright (c) 2011 Jan Grassegger
 Licensed under the MIT license.
 http://jquery.org/license
  
-##Changes:
-
-
---------- v0.2 -----------------
+##Recent Changes:
+------------------ v0.2 ------------------------------
  - fixed error with double <br>'s
  
  
-INSTALL
+##Installation
 1. download latest version from github (min version is recommended)
 2. include it like any other script on your website (like:<script type="text/javascript" src="/scripts/lib/jquery.xml-0.3.js"></script>
 
-USE
+##Usage
 1. write a xml file. currently the file has to use this scheme:
 	
 	<templates>
@@ -28,11 +26,17 @@ USE
 		</template>
 	<templates>
 	
-2. use init when initializing script. $("import_xml_content_here").xml("init", options)
+2. use init when initializing script. 
+	```javascript
+		$("import_xml_content_here").xml("init", options)
+	```
 	options: 
 		xml : xml file
 		async : if false xml file is stored in cache (faster!!) else xml file reloads every time your requesting data (dynamically)
-3. use append to append xml content. $("import_xml_content_here").xml("append", "an_id")
+3. use append to append xml content.
+	```javascript
+		$("import_xml_content_here").xml("append", "an_id")
+	```
 	contentName: id of the XML container you want to import 	
 	
 BROWSER COMPATIBILITY
