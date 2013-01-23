@@ -1,4 +1,4 @@
-#jQuery XML Plugin v0.2
+#jQuery XML Plugin
 used on and developed for http://anycook.de
 
 Copyright (c) 2013 Jan Grassegger  
@@ -6,8 +6,8 @@ Licensed under the MIT license.
 http://jquery.org/license 
 
 ## About
+jQuery XML is a plugin to dynamically import html content from xml files. It helps you importing your templates from external xml files. It`s very fast and crossbrowser compatible. 
 
- 
 ##Recent Changes
 ###v0.2
 - fixed error with double ```<br>```'s
