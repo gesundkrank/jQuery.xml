@@ -18,7 +18,7 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 2. include it like any other script on your website:
 
 	```html
-	<script type="text/javascript" src="/scripts/lib/jquery.xml-0.3.js"></script>
+	<script type="text/javascript" src="/scripts/lib/jquery.xml-0.2.min.js"></script>
 	```
 
 ##Usage
@@ -35,7 +35,7 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 	<templates>
 	```
 	
-2. use init when initializing script. 
+2. use ```init``` when initializing script. 
 	```javascript
 	$("import_xml_content_here").xml("init", options)
 	
@@ -45,7 +45,7 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 			else xml file reloads every time your requesting data (dynamically)
 	}
 	```
-3. use append to append xml content.
+3. use ```append``` to append xml content.
 	```javascript
 	$("import_xml_content_here").xml("append", "contentName")
 	
