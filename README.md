@@ -29,15 +29,18 @@ http://jquery.org/license
 2. use init when initializing script. 
 	```javascript
 		$("import_xml_content_here").xml("init", options)
+		
+		options: 
+			xml : xml file
+			async : if false xml file is stored in cache (faster!!) else xml file reloads every time your requesting data (dynamically)
 	```
-	options: 
-		xml : xml file
-		async : if false xml file is stored in cache (faster!!) else xml file reloads every time your requesting data (dynamically)
 3. use append to append xml content.
 	```javascript
-		$("import_xml_content_here").xml("append", "an_id")
+		$("import_xml_content_here").xml("append", "contentName")
+		
+		contentName: id of the XML container you want to import
 	```
-	contentName: id of the XML container you want to import 	
+	
 	
 BROWSER COMPATIBILITY
 working in all current versions of Firefox, Chrome, Opera and IE
