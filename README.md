@@ -9,7 +9,7 @@ http://jquery.org/license
 
  
 ##Recent Changes
-0.2
+###v0.2
 - fixed error with double ```<br>```'s
  
  
