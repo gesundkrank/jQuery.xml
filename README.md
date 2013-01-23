@@ -6,7 +6,7 @@ Licensed under the MIT license.
 http://jquery.org/license 
 
 ## About
-jQuery XML is a plugin to dynamically import html content from xml files. It helps you importing your templates from external xml files. It`s very fast and crossbrowser compatible. 
+jQuery XML is a plugin to dynamically import html content from xml files. It helps you importing your templates from external xml files. It`s very fast, simple and crossbrowser compatible. 
 
 ##Recent Changes
 ###v0.2
