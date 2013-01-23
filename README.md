@@ -1,8 +1,10 @@
 #jQuery XML Plugin v0.2
 used on and developed for http://anycook.de
 
-Copyright (c) 2011 Jan Grassegger
+Copyright (c) 2013 Jan Grassegger
+
 Licensed under the MIT license.
+
 http://jquery.org/license
 
 ## About
