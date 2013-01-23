@@ -30,9 +30,11 @@ http://jquery.org/license
 	```javascript
 		$("import_xml_content_here").xml("init", options)
 		
-		options: 
+		options:{
 			xml : xml file
-			async : if false xml file is stored in cache (faster!!) else xml file reloads every time your requesting data (dynamically)
+			async : if false xml file is stored in cache (faster!!) 
+				else xml file reloads every time your requesting data (dynamically)
+		}
 	```
 3. use append to append xml content.
 	```javascript
@@ -42,6 +44,7 @@ http://jquery.org/license
 	```
 	
 	
-BROWSER COMPATIBILITY
+## Browser Compability
 working in all current versions of Firefox, Chrome, Opera and IE
+
 not working in IE<v9.0
