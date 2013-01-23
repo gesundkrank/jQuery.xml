@@ -16,13 +16,14 @@ http://jquery.org/license
 ##Installation
 1. download latest version from github (min version is recommended)
 2. include it like any other script on your website:
-	```javascript
+	```html
 	<script type="text/javascript" src="/scripts/lib/jquery.xml-0.3.js"></script>
 	```
 
 ##Usage
 1. write a xml file. currently the file has to use this scheme:
 	
+	```html
 	<templates>
 		<template id="an_id">
 		 the content you want to use on your website
@@ -31,6 +32,7 @@ http://jquery.org/license
 		 the other content you want to use on your website
 		</template>
 	<templates>
+	```
 	
 2. use init when initializing script. 
 	```javascript
