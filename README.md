@@ -12,11 +12,12 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 ###v0.4
 - changed API 
 - name of tags to search for in xml-file is now changeable
+
 ###v0.3
- - "append" method supports callback
- - added option to submit error method for settings on init
- - error method is called if access to template is restricted (403) or template doesn't exist (404)
- - restricted access is detected if template tag has an "access" attribute. value is submitted in event.access
+- "append" method supports callback
+- added option to submit error method for settings on init
+- error method is called if access to template is restricted (403) or template doesn't exist (404)
+- restricted access is detected if template tag has an "access" attribute. value is submitted in event.access
 
 ###v0.2
 - fixed error with double ```<br>```'s
@@ -53,16 +54,16 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 2. Initialize the plugin.
 	```javascript
 	$("import_xml_content_here").xml(options);
-	
-	options:{
-		xml		: "xml file", 
-		async 	(optional): "if false xml file is stored in cache (faster!!) 
-			else xml file reloads every time your requesting data (dynamically)",  
-		error 	(optional): "function called if error occurs", 
-		tagName (optional): "name of the tags you want to include default: template"
-	}
 	```
-3. Use ```append``` to append xml content.
+	
+### Parameters
+- options
+	- xml : xml-File
+	- async (optional): if false xml file is stored in cache (faster!!) else xml file reloads every time your requesting data (dynamically)
+	- error (optional): function called if error occurs
+	- tagName (optional): name of the tags you want to include default: template
+	
+3. Use ```append``` to append xml content to the initialized element.
 	```javascript
 	$.xml.append(contentName[, callback]);
 	
