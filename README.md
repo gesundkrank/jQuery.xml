@@ -62,5 +62,5 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 	
 	
 ## Browser Compability
-Working with all current versions of Firefox, Chrome, Opera and IE 
+Working with all current versions of Firefox, Chrome, Opera and IE  
 Not working with IE<v9.0
