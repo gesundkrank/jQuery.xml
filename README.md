@@ -38,18 +38,17 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 	```
 
 ##Usage
-###Write a xml file.
-	
-	```html
-	<templates>
-		<template id="an_id">
-		 the content you want to use on your website
-		</template>
-		<template id="another_id">
-		 the other content you want to use on your website
-		</template>
-	<templates>
-	```
+###Write a xml file.	
+```html
+<templates>
+	<template id="an_id">
+	 the content you want to use on your website
+	</template>
+	<template id="another_id">
+	 the other content you want to use on your website
+	</template>
+<templates>
+```
 	
 ###Initialize the plugin.
 ```javascript
