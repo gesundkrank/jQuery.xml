@@ -9,6 +9,12 @@ http://jquery.org/license
 jQuery XML is a plugin to dynamically import html content from xml files. It helps you importing your templates from external xml files. It`s very fast, simple and crossbrowser compatible. 
 
 ##Recent Changes
+###v0.3
+ - "append" method supports callback
+ - added option to submit error method for settings on init
+ - error method is called if access to template is restricted (403) or template doesn't exist (404)
+ - restricted access is detected if template tag has an "access" attribute. value is submitted in event.access
+
 ###v0.2
 - fixed error with double ```<br>```'s
  
@@ -40,16 +46,18 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 	$("import_xml_content_here").xml("init", options)
 	
 	options:{
-		xml : "xml file",
+		xml : "xml file", 
 		async : "if false xml file is stored in cache (faster!!) 
-			else xml file reloads every time your requesting data (dynamically)"
+			else xml file reloads every time your requesting data (dynamically)",  
+		error : "function called if error occurs"
 	}
 	```
 3. Use ```append``` to append xml content.
 	```javascript
-	$("import_xml_content_here").xml("append", "contentName")
+	$("import_xml_content_here").xml("append", contentName, callback)
 	
 	contentName: id of the XML container you want to import
+	callback: your callback function
 	```
 	
 	
