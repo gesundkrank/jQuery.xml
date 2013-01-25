@@ -84,14 +84,14 @@ With the error handler you can handle errors that occurs when appending xml cont
 function(event){
 	switch(event.type){
 		case 403:
-			// occurs if template tag has attribte "access"
+			// if template tag has attribte "access"
 			if(!user.checkLogin())){
 				console.log("access only for logged-in users");
 				return false;
 			}
 			break;
 		case 404:
-			//occurs if template does not exist
+			// if template does not exist
 			goto404Page();
 	}
 }
