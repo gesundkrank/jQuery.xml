@@ -54,7 +54,7 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 	
 ###Initialize the plugin.
 ```javascript
-$("import_xml_content_here").xml(options) → deferred;
+$("import_xml_content_here").xml(options, callback) → deferred;
 ```
 **Parameters**
 ```
@@ -64,11 +64,12 @@ options :
 		else xml file reloads every time you are requesting data (dynamically)
 	error (optional): function called if errors occur
 	tagName (optional default="template"): name of the tags you want to include
+callback (optional): callback function 
 ```
 	
 ###Use ```append``` to append xml content to the initialized element.
-```javascript
-$.xml.append(contentName, callback);
+```
+$.xml.append(contentName, callback) → undefined;
 ```
 **Parameters**
 ```
