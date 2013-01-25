@@ -53,7 +53,7 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 ```
 	
 ###Initialize the plugin.
-```javascript
+```
 $("import_xml_content_here").xml(options, callback) → deferred;
 ```
 **Parameters**
