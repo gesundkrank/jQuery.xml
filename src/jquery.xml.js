@@ -9,6 +9,7 @@
 
 ;(function ( $, window, document, undefined ) {
 	$.fn.xml = function(options){
+		var dfd = $.Deferred();
       	var $this = $(this),
      	 	 data = $.xml._settings();
          
@@ -32,16 +33,26 @@
 	      		console.error("no target given"); 
 	      
 	      	var $xmlDoc = null;
-	      	if(settings.async == false)
-	    	  	$xmlDoc = $.xml.loadXml(settings.xml);
+	      	if(settings.async == false){
+	    	  	$.when($.xml.loadXml(settings.xml)).then(function($xmlDoc){
+	    	  		$.xml._settings({
+		               target : $this,
+		               $xmlDoc : $xmlDoc,
+		               settings : settings
+		         	});
+		         	dfd.resolve();
+	    	  	});
+	    	}else{
+	    		$.xml._settings({
+	               target : $this,
+	               settings : settings
+	         	});
+	         	dfd.resolve();
+	    	}
 	      
-	      	$.xml._settings({
-               target : $this,
-               $xmlDoc : $xmlDoc,
-               settings : settings
-         	});
+	      	
          }
-         return this;
+         return dfd.promise();
 	}
 	
 	$.xml = {
@@ -61,10 +72,18 @@
 				$xmlDoc = data.$xmlDoc,
 				tagName = data.settings.tagName;
 	            
-	        if(data.settings.async === true)
-		    	$xmlDoc = $.xml.loadXml(settings.xml);
+	        if(data.settings.async === true){
+		    	$.when($.xml.loadXml(data.settings.xml)).then(function($xmlDoc){
+		    		$.xml._append_xml($xmlDoc, data,contentName, callback);
+		    	});
+		    }else{
+		    	$.xml._append_xml($xmlDoc,data, contentName, callback);
+		    }
 	             
-		    var $template = $xmlDoc.find(tagName+"#"+contentName).first();
+		   
+		},
+		_append_xml: function($xmlDoc, data, contentName, callback){
+			var $template = $xmlDoc.find(tagName+"#"+contentName).first();
 		    if($template.length == 0){
 		    	var event = $.Event("error", {type:404});
 		     	if(!data.settings.error.apply(data.target, [event]))
@@ -91,25 +110,22 @@
 		},
 		loadXml : function(xml){
 			var xmlDoc =null;
+			var dfd = $.Deferred();
 			
-		  	$.ajax({
+			$.ajax({
 				url: xml,
-				dataType: $.browser.msie ? "text" : "xml",
-				async:false,
+				dataType: "text",
 				success: function(data){
-					if (typeof data == "string") {
-						var div = $("<div/>").html(data);
-						xmlDoc =  div.html();
-					} else {
-						xmlDoc = data;
-					}
+					var xmlDoc = $.parseXML(data);
+					dfd.resolve($(xmlDoc));
 				},
 				error: function(jqXHR, textStatus, errorThrown){
 					console.error(jqXHR.responseText);
 				}
-	    	});
+    		});
+		  	
 			$xmlDoc = $(xmlDoc);
-			return $xmlDoc;
+			return dfd.promise();
   		}
   }
   

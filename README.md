@@ -12,6 +12,8 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 ###v0.4
 - changed API 
 - name of tags to search for in xml-file is now changeable
+- compatible to jQuery >= 1.9 (no use of $.browser anymore)
+- async : true in xml ajax request
 
 ###v0.3
 - "append" method supports callback
