@@ -24,13 +24,13 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
  
  
 ##Installation
-1. Download latest version from github (min version is recommended)
-	- [jquery.xml-0.4.min.js](http://cloud.github.com/downloads/gesundkrank/jquery.xml/jquery.xml-0.4.min.js)
-	- [jquery.xml-0.4.js](http://cloud.github.com/downloads/gesundkrank/jquery.xml/jquery.xml-0.4.js)
-	- [jquery.xml-0.3.min.js](http://cloud.github.com/downloads/gesundkrank/jquery.xml/jquery.xml-0.3.min.js)
-	- [jquery.xml-0.3.js](http://cloud.github.com/downloads/gesundkrank/jquery.xml/jquery.xml-0.3.js)
-	- [jquery.xml-0.2.min.js](http://cloud.github.com/downloads/gesundkrank/jquery.xml/jquery.xml-0.2.min.js)
-	- [jquery.xml-0.2.js](http://cloud.github.com/downloads/gesundkrank/jquery.xml/jquery.xml-0.2.js)
+1. Download latest version from amazon's S3 (min version is recommended)
+	- [jquery.xml-0.4.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.min.js) (recommended)
+	- [jquery.xml-0.4.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.js)
+	- [jquery.xml-0.3.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.3.min.js)
+	- [jquery.xml-0.3.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.3.js)
+	- [jquery.xml-0.2.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.2.min.js)
+	- [jquery.xml-0.2.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.2.js)
 2. Include it like any other script on your website:
 
 	```html
@@ -73,8 +73,10 @@ $.xml.append(contentName, callback);
 contentName: id of the XML container you want to import
 callback (optional): your callback function
 ```
-	
-TODO error handler!!
+
+###Error handler
+TODO
+
 ## Browser Compability
 Working with all current versions of Firefox, Chrome, Opera and IE  
 Not working with IE<v9.0
