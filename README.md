@@ -100,4 +100,4 @@ return true;
 
 ## Browser Compability
 Working with all current versions of Firefox, Chrome, Opera and IE  
-Not working with IE<v9.0
+Not working with IE < v9.0
