@@ -19,7 +19,7 @@
 			      xml   : '/xml/template.xml',
 			      async : false,
 			      tagName : "template",
-			      error : function(event){ console.log(event);}
+			      error : function(event){ console.error(event);}
         	};
     	 
 		    // If options exist, lets merge them

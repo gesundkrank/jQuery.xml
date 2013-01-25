@@ -13,7 +13,7 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 - changed API 
 - name of tags to search for in xml-file is now changeable
 - compatible to jQuery >= 1.9 (no use of $.browser anymore)
-- async : true in xml ajax request
+- switched async to true in xml ajax request
 
 ###v0.3
 - "append" method supports callback
@@ -78,7 +78,25 @@ callback (optional): your callback function
 ```
 
 ###Error handler
-TODO
+With the error handler you can handle errors that occurs when appending xml content to your website content.
+
+```javascript
+function(event){
+	switch(event.type){
+		case 403:
+			// occurs if template tag has attribte "access"
+			if(!user.checkLogin())){
+				console.log("access only for logged-in users");
+				return false;
+			}
+			break;
+		case 404:
+			//occurs if template does not exist
+			goto404Page();
+	}
+}
+return true;
+```
 
 ## Browser Compability
 Working with all current versions of Firefox, Chrome, Opera and IE  
