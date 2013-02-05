@@ -30,7 +30,9 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
  
 ##Installation
 1. Download latest version from amazon's S3 (min version is recommended)
-	- [jquery.xml-0.4.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.min.js) (recommended)
+	- [jquery.xml-0.4.1.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.1.min.js) (recommended)
+	- [jquery.xml-0.4.1.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.1.js)
+	- [jquery.xml-0.4.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.min.js)
 	- [jquery.xml-0.4.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.js)
 	- [jquery.xml-0.3.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.3.min.js)
 	- [jquery.xml-0.3.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.3.js)
