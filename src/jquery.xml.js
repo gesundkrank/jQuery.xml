@@ -114,6 +114,7 @@
 			
 			$.ajax({
 				url: xml,
+				type:"GET",
 				dataType: "text",
 				success: function(data){
 					var xmlDoc = $.parseXML(data);
