@@ -9,6 +9,9 @@ http://jquery.org/license
 jQuery XML is a plugin to dynamically import html content from xml files. It helps you to import your templates from external xml files. It`s very fast, simple and crossbrowser compatible. 
 
 ##Recent Changes
+###v0.4.1
+- set http method to GET (POST failed sometimes with 412)
+
 ###v0.4
 - changed API 
 - name of tags to search for in xml-file is now changeable
@@ -27,7 +30,9 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
  
 ##Installation
 1. Download latest version (minified version is recommended)
-	- [jquery.xml-0.4.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.min.js) (recommended)
+	- [jquery.xml-0.4.1.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.1.min.js) (recommended)
+	- [jquery.xml-0.4.1.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.1.js)
+	- [jquery.xml-0.4.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.min.js)
 	- [jquery.xml-0.4.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.4.js)
 	- [jquery.xml-0.3.min.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.3.min.js)
 	- [jquery.xml-0.3.js](https://s3-eu-west-1.amazonaws.com/jquery.xml/jquery.xml-0.3.js)

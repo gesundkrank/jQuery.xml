@@ -1,5 +1,5 @@
 /*!
- * jQuery XML Plugin v0.4
+ * jQuery XML Plugin v0.4.1
  * http://anycook.de
  *
  * Copyright (c) 2011, 2013 Jan Grassegger
@@ -114,6 +114,7 @@
 			
 			$.ajax({
 				url: xml,
+				type:"GET",
 				dataType: "text",
 				success: function(data){
 					var xmlDoc = $.parseXML(data);
