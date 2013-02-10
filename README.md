@@ -36,7 +36,7 @@ jQuery XML is a plugin to dynamically import html content from xml files. It hel
 2. Include it like any other script on your website:
 
 	```html
-	<script type="text/javascript" src="/scripts/lib/jquery.xml-0.4.min.js"></script>
+	<script type="text/javascript" src="/scripts/lib/jquery.xml-0.4.1.min.js"></script>
 	```
 
 ##Usage
